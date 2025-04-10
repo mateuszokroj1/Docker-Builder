@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://github.com/mateuszokroj1/Docker-Builder/blob/main/manifest-schema.json",
+    "title": "Docker Builder manifest schema",
+    "type": "object",
+    "properties": {
+        "filename": {
+            "description": "Filename of Dockerfile (image recipe) ",
+            "type": "string",
+            "default": ".Dockerfile"
+        },
+        
+        "tag": {
+            "description": "Docker tag-name for this image",
+            "type": "string",
+            "pattern": "^[a-z]([a-z0-9\\_\\-]?[a-z0-9]+)*$"
+        },
+
+        "dependsOn": {
+            "description": "Depends on another image. This tag is given as ARG BASE_IMAGE to current .Dockerfile.",
+            "type": "string",
+            "pattern": "^[a-z]([a-z0-9\\_\\-]?[a-z0-9]+)*$"
+        }
+    },
+    "required": ["tag"]
+}
