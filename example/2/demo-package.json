@@ -1,0 +1,5 @@
+{
+    "$schema": "../../manifest-schema.json",
+    "tag": "example2",
+    "dependsOn": "example1"
+}

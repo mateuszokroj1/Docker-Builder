@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "https://github.com/mateuszokroj1/Docker-Builder/blob/main/manifest-schema.json",
+    "$id": "https://github.com/mateuszokroj1/Docker-Builder/manifest-schema.json",
     "title": "Docker Builder manifest schema",
     "type": "object",
     "properties": {
